@@ -21,9 +21,15 @@
     <ClCompile Include="Encapsulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AccessModifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Encapsulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccessModifier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

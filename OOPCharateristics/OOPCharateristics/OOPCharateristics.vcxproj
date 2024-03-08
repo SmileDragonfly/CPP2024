@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AccessModifier.cpp" />
     <ClCompile Include="Encapsulation.cpp" />
     <ClCompile Include="OOPCharateristics.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AccessModifier.h" />
     <ClInclude Include="Encapsulation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
