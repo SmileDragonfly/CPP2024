@@ -51,17 +51,24 @@ CBaseUser::~CBaseUser()
 
 // Same as base class
 class CPublicUser : public CBaseUser {
+public:
 	void CallMethod() {
-		SetId(1);
+		SetId(0);
 		SetAge(30);
+		std::cout << "CPublicUser::CallMethod" << std::endl;
 	}
 };
 
 // public -> protected
 class CProtectedUser : protected CBaseUser {
+public:
 	void CallMethod() {
 		SetId(1);
 		SetAge(30);
+		std::cout << "CProtectedUser::CallMethod" << std::endl;
+	}
+	int GetId() {
+		return id;
 	}
 };
 
@@ -70,5 +77,6 @@ class CPrivateUser : private CBaseUser {
 	void CallMethod() {
 		SetId(1);
 		SetAge(30);
+		std::cout << "CPrivateUser::CallMethod" << std::endl;
 	}
 };

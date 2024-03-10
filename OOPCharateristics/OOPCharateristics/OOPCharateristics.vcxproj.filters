@@ -21,7 +21,7 @@
     <ClCompile Include="Encapsulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AccessModifier.cpp">
+    <ClCompile Include="OverLoadingAndOverWriting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +30,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AccessModifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OverLoadingAndOverwriting.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
