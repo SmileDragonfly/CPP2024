@@ -135,6 +135,7 @@
     <ClInclude Include="AccessModifier.h" />
     <ClInclude Include="Encapsulation.h" />
     <ClInclude Include="OverLoadingAndOverwriting.h" />
+    <ClInclude Include="Template.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

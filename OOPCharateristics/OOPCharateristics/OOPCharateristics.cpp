@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Encapsulation.h"
+#include "Template.h"
 
 int main()
 {
@@ -10,15 +11,20 @@ int main()
 	//encap.name = "Doan Trong Dat";
 	//encap.setAge(10);
 	//std::cout << encap.getAge();
-	try {
-		// Code that might throw an exception
-		int a = 0;
-		int result = 5 / a;
-		std::cout << result << std::endl;
-	}
-	catch (const std::exception& e) {
-		std::cout << "Caught an exception: " << e.what() << std::endl;
-	}
+	//try {
+	//	// Code that might throw an exception
+	//	int a = 0;
+	//	int result = 5 / a;
+	//	std::cout << result << std::endl;
+	//}
+	//catch (const std::exception& e) {
+	//	std::cout << "Caught an exception: " << e.what() << std::endl;
+	//}
+	int sum = Add(2, 4);
+	std::cout << sum << std::endl;
+	double fSum = Add(2.1, 2.3);
+	std::cout << fSum << std::endl;
+	PrintTemp(4, std::string("tao la dat"));
 	char ch = getchar();
 	return 0;
 }
