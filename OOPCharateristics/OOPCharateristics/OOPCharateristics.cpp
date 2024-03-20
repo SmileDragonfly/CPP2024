@@ -6,10 +6,19 @@
 
 int main()
 {
-	CEncapsulation encap;
-	encap.name = "Doan Trong Dat";
-	encap.setAge(10);
-	std::cout << encap.getAge();
+	//CEncapsulation encap;
+	//encap.name = "Doan Trong Dat";
+	//encap.setAge(10);
+	//std::cout << encap.getAge();
+	try {
+		// Code that might throw an exception
+		int a = 0;
+		int result = 5 / a;
+		std::cout << result << std::endl;
+	}
+	catch (const std::exception& e) {
+		std::cout << "Caught an exception: " << e.what() << std::endl;
+	}
 	char ch = getchar();
 	return 0;
 }

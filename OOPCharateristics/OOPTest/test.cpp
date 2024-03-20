@@ -27,4 +27,13 @@ namespace {
 		EXPECT_EQ(obj.Square(2), 4);
 		EXPECT_FLOAT_EQ(obj.Square(float(2.0)), 4.0);
 	}
+
+	TEST(OverWriting, Print) {
+		COverWriting obj;
+		obj.Print("datdt");
+		COverBase *objBase = new COverBase;
+		objBase->Print("datdt");
+		objBase = &obj;
+		objBase->Print("datdt");
+	}
 }
