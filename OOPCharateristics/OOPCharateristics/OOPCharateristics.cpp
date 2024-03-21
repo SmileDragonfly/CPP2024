@@ -4,6 +4,8 @@
 #include <iostream>
 #include "Encapsulation.h"
 #include "Template.h"
+#include "Idioms.h"
+#include "MyAlgorithm.h"
 
 int main()
 {
@@ -20,12 +22,21 @@ int main()
 	//catch (const std::exception& e) {
 	//	std::cout << "Caught an exception: " << e.what() << std::endl;
 	//}
-	int sum = Add(2, 4);
-	std::cout << sum << std::endl;
-	double fSum = Add(2.1, 2.3);
-	std::cout << fSum << std::endl;
-	PrintTemp(4, std::string("tao la dat"));
-	char ch = getchar();
+	//int sum = Add(2, 4);
+	//std::cout << sum << std::endl;
+	//double fSum = Add(2.1, 2.3);
+	//std::cout << fSum << std::endl;
+	//PrintTemp(4, std::string("tao la dat"));
+	//printData("Toi la dat");
+	//CRuleOfThree obj;
+	//CRuleOfThree objTemp(obj);
+	//obj = objTemp;
+	//char ch = getchar();
+	std::vector<int> vSort{ 5,3,1,4,2 };
+	std::vector<int> vSort10{ 5,3,1,4,2, 6, 8, 10, 9, 7};
+	CMyAlgorithm alg;
+	alg.BubbleSort(vSort);
+	alg.BubbleSort(vSort10);
 	return 0;
 }
 

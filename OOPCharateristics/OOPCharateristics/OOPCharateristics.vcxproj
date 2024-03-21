@@ -128,14 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Encapsulation.cpp" />
+    <ClCompile Include="MyAlgorithm.cpp" />
     <ClCompile Include="OOPCharateristics.cpp" />
     <ClCompile Include="OverLoadingAndOverWriting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccessModifier.h" />
     <ClInclude Include="Encapsulation.h" />
+    <ClInclude Include="Idioms.h" />
+    <ClInclude Include="MyAlgorithm.h" />
     <ClInclude Include="OverLoadingAndOverwriting.h" />
     <ClInclude Include="Template.h" />
+    <ClInclude Include="VariadicTemplates.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
